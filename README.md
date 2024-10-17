@@ -71,5 +71,5 @@ python calculate_nrg.py \
 The figure below compares NDCG@10 vs. NRG for all runs submitted to the passage-retrieval task of the TREC 2019 Deep Learning Track. For each run, the prior set for computing NRG consists of the best run submitted by each group. Generally, higher NDCG values correlate with higher NRG values. However, non-neural BM25-based runs, particularly those from the "BASELINE" group, deviate from this trend. Despite their lower NDCG@10 values, these runs exhibit higher NRG values.
 
 <p align="center">
-  <img src="https://github.com/aminbigdeli/Normalized-Residual-Gain/tree/main/trecdl2019_NRG_VS_NDCG.png">
+  <img src="https://github.com/aminbigdeli/Normalized-Residual-Gain/blob/main/trecdl2019_NRG_VS_NDCG.png">
 </p>
