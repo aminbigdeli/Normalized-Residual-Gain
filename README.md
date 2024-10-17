@@ -34,7 +34,7 @@ pip install pandas numpy pytrec_eval argparse tqdm
 ```
 
 ### TaSC Calculation
-To calculate TaSC metric, we consideir the evaluation metric of all runs to be NDCG@10 and use [calculate_tasc.py](https://github.com/Narabzad/Normalized-Residual-Gain/blob/main/code/calculate_tasc.py) script with the appropriate arguments to calculate TaSC scores for TREC runs:
+To calculate TaSC metric, we consideir the evaluation metric of all runs to be NDCG@10 and use [calculate_tasc.py](https://github.com/aminbigdeli/Normalized-Residual-Gain/tree/main/code/calculate_tasc.py) script with the appropriate arguments to calculate TaSC scores for TREC runs:
 ```
 python calculate_tasc.py \
      --runs_dir /path/to/runs/dir \
@@ -45,7 +45,7 @@ python calculate_tasc.py \
      --result_dir /path/to/results/dir
 ```
 ### Rareness-based Precision Calculation
-To calculate rareness-based precision at K, run the [calculate_rareness_based_precision.py](https://github.com/Narabzad/Normalized-Residual-Gain/blob/main/code/calculate_rareness_based_precision.py) script with the appropriate arguments to calculate rareness-based precision at 10 for TREC runs:
+To calculate rareness-based precision at K, run the [calculate_rareness_based_precision.py](https://github.com/aminbigdeli/Normalized-Residual-Gain/tree/main/code/calculate_rareness_based_precision.py) script with the appropriate arguments to calculate rareness-based precision at 10 for TREC runs:
 ```
 python calculate_rareness_based_precision.py \
      --run_dir /path/to/runs/dir \
@@ -55,7 +55,7 @@ python calculate_rareness_based_precision.py \
      --k 10
 ```
 ### Normalized Residual Gain Calculation
-To calculate normalized residual gain, run the [normalized_residual_gain.py](https://github.com/Narabzad/Normalized-Residual-Gain/blob/main/code/calculate_nrg.py) script with the appropriate arguments on MS MARCO dev small and TREC DL 2019 runs:
+To calculate normalized residual gain, run the [normalized_residual_gain.py](https://github.com/aminbigdeli/Normalized-Residual-Gain/tree/main/code/calculate_nrg.py) script with the appropriate arguments on MS MARCO dev small and TREC DL 2019 runs:
 ```
 python calculate_nrg.py \
      --dataset_name DATASET_NAME \ 
@@ -71,5 +71,5 @@ python calculate_nrg.py \
 The figure below compares NDCG@10 vs. NRG for all runs submitted to the passage-retrieval task of the TREC 2019 Deep Learning Track. For each run, the prior set for computing NRG consists of the best run submitted by each group. Generally, higher NDCG values correlate with higher NRG values. However, non-neural BM25-based runs, particularly those from the "BASELINE" group, deviate from this trend. Despite their lower NDCG@10 values, these runs exhibit higher NRG values.
 
 <p align="center">
-  <img src="https://github.com/Narabzad/Normalized-Residual-Gain/blob/main/trecdl2019_NRG_VS_NDCG.png">
+  <img src="https://github.com/aminbigdeli/Normalized-Residual-Gain/tree/main/trecdl2019_NRG_VS_NDCG.png">
 </p>
